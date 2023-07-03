@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    tools:ignore="MissingClass">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+<!--    <com.smarteist.autoimageslider.SliderView-->
+<!--        android:id="@+id/slider11"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="170dp"-->
+
+<!--        android:layout_centerInParent="true"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        app:sliderAnimationDuration="600"-->
+<!--        app:sliderAutoCycleDirection="back_and_forth"-->
+<!--        app:sliderIndicatorAnimationDuration="600"-->
+<!--        app:sliderIndicatorEnabled="true"-->
+<!--        app:sliderIndicatorGravity="center_horizontal|bottom"-->
+<!--        app:sliderIndicatorMargin="15dp"-->
+<!--        app:sliderIndicatorOrientation="horizontal"-->
+<!--        app:sliderIndicatorPadding="3dp"-->
+<!--        app:sliderIndicatorRadius="2dp"-->
+<!--        app:sliderIndicatorSelectedColor="#5A5A5A"-->
+<!--        app:sliderIndicatorUnselectedColor="#FFF"-->
+<!--        app:sliderScrollTimeInSec="1" />-->
+    <com.denzcoskun.imageslider.ImageSlider
+
+        android:id="@+id/carousel"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        app:iss_auto_cycle="true"
+        app:iss_corner_radius="20"
+
+        app:iss_delay="0"
+        app:iss_period="3000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="#FFBF00"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="200dp"
+
+            android:src="@drawable/jeep" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="SHARE A RIDE"
+            android:textSize="26sp" />
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="65dp"
+            android:padding="10dp"
+            android:layout_marginTop="35dp"
+            android:text="Going somewhere? save money, reduce carbon. Share a car. Drive green and make a positive impact!"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/book1"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:textColor="#FFBF00"
+            android:text="Book" />
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="195dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="#96c8d9"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="200dp"
+
+            android:src="@drawable/mapp1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="BOOK A RIDE"
+            android:textSize="26sp" />
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="65dp"
+            android:padding="10dp"
+            android:layout_marginTop="35dp"
+            android:text=" Book now to enjoy a social, eco-friendly, and convenient ride while saving money and nature!"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/book2"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:textColor="#96c8d9"
+            android:text="Book" />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

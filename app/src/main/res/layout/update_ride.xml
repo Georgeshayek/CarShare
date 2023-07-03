@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+
+   >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6A5ACD">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/title1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="125dp"
+            android:src="@drawable/crss"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CarShare"
+            android:fontFamily="cursive"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="165dp"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bottom_sheet_title"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Update current Ride"
+        android:textColor="@android:color/black"
+
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/amountextview"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="amount of people"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/input"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/bottom_sheet_description"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:text="Price per person"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/input1"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_width="220dp"
+            />
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/bottom_sheet_Date"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Date"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <NumberPicker
+            android:id="@+id/day_picker"
+            android:layout_width="81dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+
+            android:dividerHeight="2dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        />
+
+
+
+        <NumberPicker
+            android:id="@+id/month_picker"
+            android:layout_width="80dp"
+            android:layout_height="101dp"
+            android:dividerHeight="2dp"
+
+            android:textColor="#000000"
+            android:textSize="20sp"
+
+            android:layout_marginStart="10dp"/>
+
+        <NumberPicker
+            android:id="@+id/year_picker"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:dividerHeight="2dp"
+
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"/>
+        />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/bottom_sheet_description1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Time"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+
+
+        <NumberPicker
+            android:id="@+id/hours_picker"
+            android:layout_width="80dp"
+            android:layout_height="101dp"
+            android:layout_marginEnd="10dp"
+
+            android:dividerHeight="2dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=":"
+            />
+        <NumberPicker
+            android:id="@+id/minutes_picker"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:dividerHeight="2dp"
+
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"/>
+        />
+
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/bottom_sheet_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+       android:layout_marginTop="100dp"
+        android:text="Update Ride"
+        app:cornerRadius="20dp"/>
+
+</LinearLayout>

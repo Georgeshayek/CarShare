@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#6A5ACD">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:padding="8dp" />
+    <ImageView
+        android:id="@+id/title1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="125dp"
+        android:src="@drawable/crss"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CarShare"
+        android:fontFamily="cursive"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="165dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        />
+<!--    <TextView-->
+<!--        android:id="@+id/title"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/app_name"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:layout_centerInParent="true" />-->
+
+</RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/carlogo"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to DriveShare, your go-to carsharing app that revolutionizes the way you experience urban mobility. We believe in making transportation convenient, sustainable, and cost-effective for everyone. Whether you need a car for a quick trip across town or a longer journey, DriveShare provides you with a seamless, hassle-free carsharing experience."
+        android:textSize="16sp"
+        android:lineSpacingExtra="8dp"
+        android:padding="16dp"
+        />
+    <TextView
+        android:id="@+id/missionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our Mission"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/descriptionTextView"
+        android:layout_marginTop="16dp"
+         />
+
+    <TextView
+        android:id="@+id/missionDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our mission is to transform the way people think about car ownership and promote a more sustainable future. We aim to reduce traffic congestion, lower carbon emissions, and create a sense of community by providing a reliable and affordable alternative to traditional car ownership."
+        android:textSize="16sp"
+        android:lineSpacingExtra="8dp"
+        android:layout_below="@id/missionTextView"
+        android:padding="16dp" />
+    <TextView
+        android:id="@+id/visionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our Vision"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/missionDescriptionTextView"
+        android:layout_marginTop="32dp"
+         />
+
+    <TextView
+        android:id="@+id/visionDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We envision a future where carsharing becomes the norm, enabling people to access convenient and sustainable transportation options effortlessly. Our goal is to
+empower individuals to embrace a car-light lifestyle, reducing the need for private vehicle ownership and creating a positive impact on the environment and communities we serve."
+        android:textSize="16sp"
+        android:lineSpacingExtra="8dp"
+        android:layout_below="@id/visionTextView"
+        android:padding="16dp" />
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
